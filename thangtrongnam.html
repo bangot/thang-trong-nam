@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input id="to" type="number">
+    <input type="button" onclick="bang1()"></input>
+    <p id="kq"></p>
+</form>
+<script>
+    function bang1() {
+        let month = +document.getElementById('to').value;
+
+        switch (month) {
+            case 1:
+            case 3:
+            case 4:
+            case 5:
+                document.getElementById('kq').innerHTML = month+ 'co 30 ngay';
+                break;
+                case2:
+                    document.getElementById('kq').innerHTML = '28 ngay';
+                break;
+
+        }
+
+    }
+
+
+</script>
+</body>
+</html>
